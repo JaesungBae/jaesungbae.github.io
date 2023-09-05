@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Jae-Sung Bae</title>
+
+        <!-- style -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    </head>
+    <body>
+    <div class="container">
+        <h1>Jae-Sung Bae</h1>
+        <p>bjs2279 [at] gmail [dot] com</p>
+        <!--- <p class="lead">undergrad studying cs and math<br> </p> -->
+        <ul>
+        <!-- <li><a href="index.html">Home</a></li>  -->
+        <li> <a href="Christopher_Wang_Resume.pdf">Resume</a></li> 
+        <li> <a href="https://scholar.google.co.kr/citations?user=ay1zanAAAAAJ&hl=ko">Google Scholar</a></li>
+        <li> <a href="http://www.linkedin.com/in/jaesung-bae-955410157">LinkedIn</a> </li>
+        <li> <a href="#projects">Projects</a></li>
+        <li> <a href="#publications">Publications</a></li>
+        <!-- <li> <a href="https://github.com/czlwang">Github</a></li> 
+        <li><a href="art/index.html">Drawing</a></li> 
+        <li><a href="zettel/index.html">Zettelkasten</a></li> 
+        <li><a href="misc/index.html">Misc</a></li>  -->
+        </ul>
+    </div><!-- /.container -->
+
+    <div class="container">
+        <h2>About</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-7">
+                <p>
+                    I am now working for <a href="https://research.samsung.com/">Samsung Research</a> as a Speech AI Researcher. My main research topic has recently been 
+                    personalized and zero-shot on-device TTS systems. Previously, I worked at <a href="https://kr.ncsoft.com/en/index.do">NCSOFT</a>, a game company, mainly 
+                    studying expressive TTS and prosody controllable TTS systems. I received my BS in Electrical and Electronic Engineering from <a href="https://www.yonsei.ac.kr/en_sc/">Yonsei University</a> 
+                    and my master's degree in Electrical Engineering from <a href="https://www.kaist.ac.kr/en/">KAIST 
+                    </a> in <a href="http://brain.kaist.ac.kr/brain/main.php">BREIL lab</a> advised by Daeshik Kim. 
+                    I am interested in TTS and now widening my interest to combine TTS with techniques from various fields, 
+                    such as spontaneous speech-to-speech, multimodal generation, video dubbing, etc.
+                </p>
+                <p>
+                    &nbsp&nbsp Below shows my <a href="#projects">projects</a> and <a href="#publications">publications</a>.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <img src="profile.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="projects">
+        <h2>Projects</h2>
+        <hr>
+        <a href=""> Go to top</a><br>
+        Kindly ask you to click each project for the demo and futher information.
+        <div class="row" OnClick="location.href='projects/baseball.html'" style="cursor:pointer" id="project:baseball">
+            <div class="col-md-8">
+                <h3>TTS system in baseball broadcast scenario</h3>
+                <h5>Mar 2019 - Mar 2021</h5>
+                <p>
+                I researched and developed an expressive TTS system that can generate speech with dynamic expressions that are suitable for different baseball situations.
+                It can generate speech with 4 emotions (highly expressive, expressive, neutral, and depressed).
+                It can generate expressive speech responses to the input text symbols (,, ~, !, ?).
+                Published several demos on NCSOFT’s official blog and news articles. Demo and article link: https://blog.ncsoft.com/prosody-control-ai-20201210/
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" OnClick="location.href='projects/uninverse.html'" style="cursor:pointer" id="project:universe">
+            <div class="col-md-3">
+                <img src="images/universe_1.jpg">
+            </div>
+            <div class="col-md-7">
+                <h3>TTS system of K-pop fandom platform, “UNIVERSE” (live service)</h3>
+                <h5>Mar 2019 - Jun 2022</h5>
+                <p>
+                I contributed to research and develop a multi-speaker TTS system that can generate various idols' voices (about 100 idols) in one TTS system. The TTS systems are used in following two services included in UNIVERSE. <br>
+                </p>
+            </div>
+        </div>
+        
+        <div class="row" OnClick="location.href='projects/controllable.html'" style="cursor:pointer" id="project:controllable">
+            <div class="col-md-8">
+                <h3>Fine-grained prosody control of TTS system (prototype web service)</h3>
+                <h5>Mar 2021 - Jun 2022</h5>
+                <p>
+                    I researched and developed the TTS system that is able to control the prosody of speech in a fine-grained level, so that the users can generate speech with the prosody they want.
+                    I contributed to releasing this fine-grained controllable TTS system as a prototype web service which is opened as an in-company service. 
+                    For example, the speech generated with the fine-grained controllable TTS system was used in the video introducing the updated patch note of the game (Trickster-M).
+                    Youtube link: https://www.youtube.com/watch?v=_Ssb9y73XtI
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="publications">
+        <h2>Publications</h2>
+        <hr>
+        <a href=""> Go to top</a><br>
+        *: Equal Contribution
+        <div class="row">
+            <div class="col-md-1">
+                <h5>2023</h5>
+            </div>
+            <div class="col-md-10">
+                <h4>
+                Avocodo: Generative adversarial network for artifact-free vocoder
+                [ <a href="https://arxiv.org/abs/2206.13404">paper</a> ]
+                [ <a href="https://nc-ai.github.io/speech/publications/Avocodo/index.html">demo</a> ]
+                [ <a href="https://github.com/ncsoft/avocodo">code</a> ]
+                </h4>
+                <h5>
+                Taejun Bak, Junmo Lee, Hanbin Bae, Jinhyeok Yang, <b>Jae-Sung Bae</b>, Young-Sun Joo, in<i> Proc. AAAI</i>
+                </h5>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-1">
+                <h5>2022</h5>
+            </div>
+            <div class="col-md-10">
+                <h4>
+                    Hierarchical and Multi-Scale Variational Autoencoder for Diverse and Natural Non-Autoregressive Text-to-Speech
+                    [ <a href="https://arxiv.org/abs/2204.04004">paper</a> ]
+                    [ <a href="https://nc-ai.github.io/speech/publications/himuv-tts/">demo</a> ]
+                    [ <a href="https://youtu.be/3U5cEu0gFYY ">video</a> ]
+                </h4>
+                <h5>
+                <b>Jae-Sung Bae</b>, Jinhyeok Yang, Tae-Jun Bak, Young-Sun Joo, in <i>Proc. INTERSPEECH</i>
+                </h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+                <h4>
+                    Into-TTS : Intonation Template Based Prosody Control System
+                    [ <a href="https://arxiv.org/abs/2204.01271">paper</a> ]
+                    [ <a href="https://srtts.github.io/IntoTTS/">demo</a> ]
+                </h4>
+                <h5>
+                Jihwan Lee, Joun Yeop Lee, Heejin Choi, Seongkyu Mun, Sangjun Park, <b>Jae-Sung Bae</b>, Chanwoo Kim, in <i>arXiv preprint arXiv:2204.01271</i>
+                </h5>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-1">
+                <h5>2021</h5>
+            </div>
+            <div class="col-md-10">
+                <h4>
+                Hierarchical Context-Aware Transformers for Non-Autoregressive Text to Speech
+                [ <a href="https://arxiv.org/abs/2106.15144">paper</a> ]
+                [ <a href="https://nc-ai.github.io/speech/publications/hierarchical-transformers-tts/">demo</a> ]
+                </h4>
+                <h5>
+                    <b>Jae-Sung Bae</b>, Tae-Jun Bak, Young-Sun Joo, and Hoon-Young Cho, in <i>Proc. INTERSPEECH</i>
+                </h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+                <h4>
+                    GANSpeech: Adversarial Training for High-Fidelity Multi-Speaker Speech Synthesis
+                [ <a href="https://arxiv.org/abs/2106.15153">paper</a> ]
+                [ <a href="https://nc-ai.github.io/speech/publications/ganspeech/">demo</a> ]
+                </h4>
+                <h5>
+                    Jinhyeok Yang*, <b>Jae-Sung Bae*</b>, Taejun Bak, Youngik Kim, and Hoon-Young Cho, in <i>Proc. INTERSPEECH</i>
+                </h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+                <h4>
+                FastPitchFormant: Source-filter based Decomposed Modeling for Speech Synthesis
+                [ <a href="https://arxiv.org/abs/2106.15123">paper</a> ]
+                [ <a href="https://nc-ai.github.io/speech/publications/fastpitchformant/">demo</a> ]
+                </h4>
+                <h5>
+                    Taejun Bak, <b>Jae-Sung Bae</b>, Hanbin Bae, Young-Ik Kim, and Hoon-Young Cho, in <i>Proc. INTERSPEECH</i>
+                </h5>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+                <h4>
+                A Neural Text-to-Speech Model Utilizing Broadcast Data Mixed with Background Music
+                [ <a href="https://arxiv.org/abs/2103.03049">paper</a> ]
+                [ <a href="https://nc-ai.github.io/speech/publications/tts-with-bgm-data/">demo</a> ]
+                </h4>
+                <h5>
+                    Hanbin Bae, <b>Jae-Sung Bae</b>, Young-Sun Joo, Young-Ik Kim, and Hoon-Young Cho, in <i>Proc. ICASSP</i>
+                </h5>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-1">
+                <h5>2020</h5>
+            </div>
+            <div class="col-md-10">
+                <h4>
+                    Speaking Speed Control of End-to-End Speech Synthesis using Sentence-Level Conditioning
+                [ <a href="https://arxiv.org/abs/2007.15281">paper</a> ]
+                [ <a href="https://nc-ai.github.io/speech/publications/speed-controllable-tts/">demo</a> ]
+                [ <a href="https://youtu.be/WyDfc53Ez_A ">video</a> ]
+                </h4>
+                <h5>
+                    <b>Jae-Sung Bae</b>, Hanbin Bae, Young-Sun Joo, Junmo Lee, Gyeong-Hoon Lee, Hoon-Young Cho, in <i>Proc. INTERSPEECH</i>
+                </h5>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-1">
+                <h5>2019</h5>
+            </div>
+            <div class="col-md-10">
+                <h4>
+                    End-Point Detection with State Transition Model based on Chunk-Wise Classification 
+                [ <a href="https://arxiv.org/abs/1912.10442">paper</a> ]
+                </h4>
+                <h5>
+                    Juntae Kim*, <b>Jaesung Bae*</b>, Minsoo Hahn, <i>arXiv preprint arXiv:1912.10442</i>
+                </h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+                <h4>
+                    Phase-Aware Speech Enhancement with a Recurrent Two Stage Network
+                [ <a href="https://arxiv.org/abs/2001.09772">paper</a> ]
+                </h4>
+                <h5>
+                    Juntae Kim, and <b>Jae-Sung Bae</b>, <i>arXiv preprint arXiv:2001.09772</i>
+                </h5>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="row">
+            <div class="col-md-1">
+                <h5>2018</h5>
+            </div>
+            <div class="col-md-10">
+                <h4>
+                    End-to-End Speech Command Recognition with Capsule Network
+                [ <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2018/bae18_interspeech.pdf">paper</a> ]
+                </h4>
+                <h5>
+                    <b>Jae-Sung Bae</b>, Dae-Shik Kim, in <i>Proc. INTERSPEECH</i>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+</html>

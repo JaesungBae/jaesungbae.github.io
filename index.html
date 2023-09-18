@@ -11,13 +11,16 @@
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     </head>
     <body>
     <div class="container">
         <h1>Jae-Sung Bae</h1>
         <p>bjs2279 [at] gmail [dot] com</p>
         <!--- <p class="lead">undergrad studying cs and math<br> </p> -->
+    </div>
+    <div class="container">
         <ul>
         <li><a href="index.html">Home</a></li> 
         <li> <a href="Christopher_Wang_Resume.pdf">Resume</a></li> 
@@ -47,7 +50,7 @@
                     such as spontaneous speech-to-speech, multimodal generation, video dubbing, etc.
                 </p>
                 <p>
-                    &nbsp&nbsp Below shows my <a href="#projects">projects</a> and <a href="#publications">publications</a>.
+                    &nbsp&nbsp Below shows my <a href="#projects">projects</a> and <a href="#publications">publications</a>. Please refere to my <a><strong>resume</strong></a> for further details.
                 </p>
             </div>
             <div class="col-md-3">
@@ -59,20 +62,25 @@
     <div class="container" id="projects">
         <h2>Projects</h2>
         <hr>
-        <p>
-        <a href=""> Go to top</a><br>
-        You can click each project and check demos and futher information.
-        </p>
-        <div class="row" OnClick="location.href='projects/baseball.html'" style="cursor:pointer" id="project:baseball">
-            <div class="col-md-3">
-                <video width="240" height="160" autoplay >
+        <div class="row">
+            <div class="col-md-9">
+                <p>
+                You can click each project and check demos and futher information.
+                </p>
+            </div>
+            <div class="col-md-3 col-md-offset-3">
+            <p><a class="btn btn-default" href="" role="button">Go to top</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" OnClick="location.href='projects/baseball.html'" style="cursor:pointer" id="project:baseball">
+                <video class="main_project_img" width="240" height="160" autoplay >
                     <source src="images/baseball_example_png.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="col-md-7">
-                <h3>TTS system in baseball broadcast scenario</h3>
-                <h5>Mar 2019 - Mar 2021</h5>
+            <div class="col-md-7" OnClick="location.href='projects/baseball.html'" style="cursor:pointer" id="project:baseball">
+                <h3>TTS system in baseball broadcast scenario<br><small>Mar 2019 - Mar 2021</small></h3>
                 <p>
                 I researched and developed an expressive TTS system that can generate speech with dynamic expressions that are suitable for different baseball situations. Published several demos on NCSOFT’s official blog and news articles.
                 <b>Highly recommand to click this project, and see the demo videos.</b>
@@ -84,23 +92,22 @@
             </div>
         </div>
 
-        <div class="row justify-content-center" OnClick="location.href='projects/uninverse.html'" style="cursor:pointer" id="project:universe">
-            <div class="col-md-3">
-                <img src="images/universe_1.jpg" width="240" height="160" >
+        <div class="row justify-content-center">
+            <div class="col-md-3" OnClick="location.href='projects/uninverse.html'" style="cursor:pointer" id="project:universe">
+                <img class="main_project_img" src="images/universe_1.jpg" width="240" height="160" >
             </div>
-            <div class="col-md-7">
-                <h3>TTS system of K-pop fandom platform, “UNIVERSE” (live service)</h3>
-                <h5>Mar 2019 - Jun 2022</h5>
+            <div class="col-md-7" OnClick="location.href='projects/uninverse.html'" style="cursor:pointer" id="project:universe">
+                <h3>TTS system of K-pop fandom platform, “UNIVERSE” (live service)<br><small>Mar 2019 - Jun 2022</small></h3>
+                
                 <p>
                 I contributed to research and develop a multi-speaker TTS system that can generate various K-pop artists' voices (about 100 artists) in a single TTS system. The TTS system was used in Universe, which is a K-pop fan community platform. <br>
                 </p>
             </div>
         </div>
         
-        <div class="row" OnClick="location.href='projects/controllable.html'" style="cursor:pointer" id="project:controllable">
-            <div class="col-md-8">
-                <h3>Fine-grained prosody control of TTS system (prototype web service)</h3>
-                <h5>Mar 2021 - Jun 2022</h5>
+        <div class="row">
+            <div class="col-md-8" OnClick="location.href='projects/controllable.html'" style="cursor:pointer" id="project:controllable">
+                <h3>Fine-grained prosody control of TTS system (prototype web service)<br><small>Mar 2021 - Jun 2022</small></h3>
                 <p>
                     I researched and developed the TTS system that is able to control the prosody of speech in a fine-grained level, so that the users can generate speech with the prosody they want.
                     I contributed to releasing this fine-grained controllable TTS system as a prototype web service which is opened as an in-company service. 
@@ -114,23 +121,34 @@
     <div class="container" id="publications">
         <h2>Publications</h2>
         <hr>
-        <p>
-        <a href=""> Go to top</a><br>
-        *: Equal Contribution
-        </p>
         <div class="row">
-            <div class="col-md-1">
-                <h5>2023</h5>
+            <div class="col-md-9">
+                <h5>
+                *: Equal Contribution
+                </h5>
+            </div>
+            <div class="col-md-3 col-md-offset-3">
+            <p><a class="btn btn-default" href="" role="button">Go to top</a></p>
+            </div>
+        </div>
+        <!-- <a href=""> </a><br> -->
+        <!-- </p> -->
+        <div class="row">
+            <div class="col-md-1 taller">
+                <h5>2023<br><br><br><br><br></h5>
             </div>
             <div class="col-md-10">
                 <h4>
                 Hierarchical Timbre-Cadence Speaker Encoder for Zero-shot Speech Synthesis
-                [ <a href="https://www.isca-speech.org/archive/interspeech_2023/lee23f_interspeech.html">paper</a> ]
-                [ <a href="https://srtts.github.io/tc-zstts/">demo</a> ]
+                <!-- <p class="h5 fw-light"> -->
+                <span class="h5"><br>
+                Joun Yeop Lee, <b>Jae-Sung Bae</b>, Seongkyu Mun, Jihwan Lee, Ji-Hyun Lee, Hoon-Young Cho, Chanwoo Kim<br>
+                In<i> INTERSPEECH</i>, 2023. <br>
+                <a href="https://www.isca-speech.org/archive/interspeech_2023/lee23f_interspeech.html">[paper]</a>
+                <a href="https://srtts.github.io/tc-zstts/">[demo]</a>
+                </span>
+                <!-- </p> -->
                 </h4>
-                <h5>
-                Joun Yeop Lee, <b>Jae-Sung Bae</b>, Seongkyu Mun, Jihwan Lee, Ji-Hyun Lee, Hoon-Young Cho, Chanwoo Kim, in<i> INTERSPEECH</i>
-                </h5>
             </div>
         </div>
         <div class="row">
@@ -138,14 +156,14 @@
             </div>
             <div class="col-md-10">
                 <h4>
-                Avocodo: Generative adversarial network for artifact-free vocoder
+                Avocodo: Generative Adversarial Network for Artifact-free Vocoder
                 [ <a href="https://arxiv.org/abs/2206.13404">paper</a> ]
                 [ <a href="https://nc-ai.github.io/speech/publications/Avocodo/index.html">demo</a> ]
                 [ <a href="https://github.com/ncsoft/avocodo">code</a> ]
-                </h4>
-                <h5>
+                <br><small>
                 Taejun Bak, Junmo Lee, Hanbin Bae, Jinhyeok Yang, <b>Jae-Sung Bae</b>, Young-Sun Joo, in<i> Proc. AAAI</i>
-                </h5>
+                </small>
+                </h4>
             </div>
         </div>
         <hr>
@@ -312,5 +330,6 @@
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

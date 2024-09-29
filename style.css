@@ -4,6 +4,25 @@ body {
   /* width: 1000px; */
 }
 
+h2 {
+  font-size: 28px !important;
+}
+h3 {
+  font-size: 22px !important;
+}
+h4 {
+  font-size: 18px !important;
+}
+h5 {
+  font-size: 13px !important;
+}
+p {
+    font-size: 16px;
+}
+hr {
+  margin: 10px 0px !important;
+}
+
 #rcorners1 {
   border-radius: 5px;
   background: #FF0000;
@@ -45,9 +64,6 @@ tr td{
 }
 
 
-p {
-    font-size: 17px;
-}
 
 .main_project_img{
   display: block;

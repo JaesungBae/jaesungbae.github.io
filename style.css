@@ -7,18 +7,23 @@ body {
 h2 {
   font-size: 28px !important;
 }
+
 h3 {
   font-size: 22px !important;
 }
+
 h4 {
   font-size: 18px !important;
 }
+
 h5 {
   font-size: 13px !important;
 }
+
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
+
 hr {
   margin: 10px 0px !important;
 }
@@ -26,14 +31,15 @@ hr {
 #rcorners1 {
   border-radius: 5px;
   background: #FF0000;
-  color:#FFFFFF;
+  color: #FFFFFF;
   padding: 2px;
   /* width: 200px; */
   /* height: 150px; */
 }
+
 /* /* .starter-template { */
-  /*padding: 40px 15px;*/
-  /*text-align: center;*/
+/*padding: 40px 15px;*/
+/*text-align: center;*/
 /* } */
 
 .vup {
@@ -41,17 +47,19 @@ hr {
   vertical-align: top;
   float: none;
 }
+
 /* table {
   padding: 10px;
   border-collapse: separate!important;
 } */
-table{
+table {
   /* margin:10px; */
   margin-bottom: 20px;
 }
-tr td{
-  padding: 5px!important;
-  align-items: center!important;
+
+tr td {
+  padding: 5px !important;
+  align-items: center !important;
 }
 
 .pub-year {
@@ -65,7 +73,7 @@ tr td{
 
 
 
-.main_project_img{
+.main_project_img {
   display: block;
   margin: auto;
   /* margin-right: 20; */
@@ -81,26 +89,70 @@ tr td{
   /* height: 160px; */
 }
 
-.row{
+.row {
   display: flex;
   align-items: center;
-	/*margin: 20px;*/
+  /*margin: 20px;*/
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-li {
-    display: inline;
+ul li {
+  display: inline;
 }
 
-li a {
-    text-align: left;
-    padding-right: 16px;
-    text-decoration: none;
+ul li a {
+  text-align: left;
+  padding-right: 16px;
+  text-decoration: none;
+}
+
+ol {
+  list-style: none;
+  list-style-position: inside;
+  /* Ensures numbers are inside the list container */
+  margin: 0;
+  padding: 0 0 0 20px;
+  /* Adds indentation to the left */
+}
+
+/* ol li { */
+/* margin: 0; */
+/* Adds spacing between list items */
+/* padding-left: 5px; */
+/* Optional: further adjust indentation */
+/* margin-bottom: 10px; */
+/* } */
+
+ol li {
+  font-size: 16px;
+  list-style: none;
+  /* Remove default list numbers */
+  position: relative;
+  /* Enable positioning for the circle */
+  margin: 5px 0;
+  /* Add spacing between list items */
+  padding-left: 20px;
+  /* Create space for the circle */
+  margin-bottom: 10px;
+}
+
+ol li::before {
+  content: '●';
+  /* Unicode for a solid circle */
+  color: #000;
+  /* Circle color (change as needed) */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+  /* Adjust circle size */
+  line-height: 1.5;
+  /* Align circle vertically */
 }
 
 #flex {

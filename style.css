@@ -142,7 +142,7 @@ ol li {
 }
 
 ol li::before {
-  content: '●';
+  content: '\25CF';
   /* Unicode for a solid circle */
   color: #000;
   /* Circle color (change as needed) */

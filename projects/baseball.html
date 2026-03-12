@@ -1,181 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Baseball TTS — Jaesung Bae</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .demo-table td { padding: 10px 16px !important; vertical-align: middle; }
+    </style>
+</head>
+<body>
 
-        <title>Jae-Sung Bae</title>
-
-        <!-- style -->
-        <link rel="stylesheet" type="text/css" href="../style.css">
-
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    </head>
-    <body>
-    <div class="container" style="width:900px">
-        <ol class="breadcrumb">
-            <li><a href="../index.html">Jae-Sung Bae</a></li>
-            <li class="active">Project 1: TTS system in baseball broadcast scenario</li>
-        </ol>
-        <a class="btn btn-default" href="../index.html#project:baseball" role="button">Go back</a>
-        <!-- <h4><a href="../index.html#project:baseball">Go back</a></h4> -->
-        <div class="row">
-            <div class="col-md-12">
-                <h2>TTS System in Baseball Broadcast Scenario<br><small>Mar 2019 - Mar 2021 (@ NCSOFT)</small></h2>
-            </div>
+    <nav class="site-nav">
+        <div class="container">
+            <span class="nav-name"><a href="../index.html">Jaesung Bae</a></span>
+            <ul class="nav-links">
+                <li><a href="../index.html#projects">&larr; Back to Projects</a></li>
+            </ul>
         </div>
+    </nav>
+
+    <div class="container section-block">
+        <h2>TTS System in Baseball Broadcast Scenario<br>
+            <small>Mar 2019 - Mar 2021 (@NCSOFT)</small></h2>
         <hr>
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                    At NCSOFT, we studied <strong>"broadcasting-style" TTS system</strong> that can imitate sportcasters. <b>To express the diverse speaking style of baseball broadcasting,</b> especially in pitch ranges, expressive speech synthesis technique was needed. We studied TTS system that can generate speech with various emotions and its intensity. Furthermore, we also developed the TTS system to generate speech with proper prosody corresponding to text symbols (,, ~, !, ?). 
-                </p>
-            </div>
+        <p>
+            At NCSOFT, we studied a <strong>"broadcasting-style" TTS system</strong> that can imitate sportscasters.
+            <b>To express the diverse speaking style of baseball broadcasting,</b> especially in pitch ranges,
+            expressive speech synthesis technique was needed. We studied a TTS system that can generate speech with
+            various emotions and its intensity. Furthermore, we also developed the TTS system to generate speech with
+            proper prosody corresponding to text symbols (,&nbsp;&nbsp;~&nbsp;&nbsp;!&nbsp;&nbsp;?).
+        </p>
+        <p>
+            The speech samples generated from a neutral-style TTS system and our broadcasting-style TTS system can be
+            found below. The content of the speech samples is the same.
+        </p>
+
+        <div style="text-align:center; margin-top:16px;">
+            <table class="table-bordered demo-table" style="margin:0 auto;">
+                <tbody>
+                    <tr>
+                        <td><strong>Neutral style</strong></td>
+                        <td>
+                            <audio controls>
+                                <source src="../audio/baseball_speech_1_natural.wav" type="audio/wav">
+                                Audio not available.
+                            </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Broadcasting style</strong></td>
+                        <td>
+                            <audio controls>
+                                <source src="../audio/baseball_speech_1_expressive.wav" type="audio/wav">
+                                Audio not available.
+                            </audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                &nbsp&nbsp&nbsp&nbsp The speech samples generated from neutral-style TTS system and our broadcasting-style TTS system can be found below. The content of the speech samples are same.
-                </p>
-            </div>
-            
+
+        <p style="margin-top:24px;">
+            Our TTS system can also control the intensity of the expressiveness depending on the situation.
+            Please listen to the speech samples below.
+        </p>
+
+        <div style="text-align:center; margin-top:16px;">
+            <table class="table-bordered demo-table" style="margin:0 auto;">
+                <tbody>
+                    <tr>
+                        <td><strong>Weak</strong></td>
+                        <td>
+                            <audio controls>
+                                <source src="../audio/baseball_speech_2_weak.wav" type="audio/wav">
+                                Audio not available.
+                            </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Strong</strong></td>
+                        <td>
+                            <audio controls>
+                                <source src="../audio/baseball_speech_2_strong.wav" type="audio/wav">
+                                Audio not available.
+                            </audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="row">
-            <!-- <div class="col-md-12 align-middle"> -->
-            <div class="center-block">
-                <table class="table-bordered">
-                    <tbody>
-                        <tr>
-                            <td><h4>Neutral style</h4></td>
-                            <td>
-                                <audio controls>
-                                    <source src="../audio/baseball_speech_1_natural.wav" type="audio/wav">
-                                    Audio not available.
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><h4>Broadcasting style</h4></td>
-                            <td>
-                                <audio controls>
-                                    <source src="../audio/baseball_speech_1_expressive.wav" type="audio/wav">
-                                    Audio not available.
-                                </audio>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+
+        <p style="margin-top:24px;">
+            Furthermore, various situations are bound to appear in baseball broadcasts. The following videos are
+            samples with synthesized speech from our TTS system of four situations: 1) player introduction,
+            2) commentary on ball counts or pitches, and 3) events such as strike outs, hits, and home runs.
+        </p>
+
+        <div style="text-align:center; margin-top:16px;">
+            <p><strong>1) Player introduction</strong></p>
+            <video controls width="400">
+                <source src="../images/broadcasting_demo_video_2.mp4" type="video/mp4">
+            </video>
+
+            <p style="margin-top:20px;"><strong>2) Commentary on ball counts or pitches</strong></p>
+            <video controls width="400">
+                <source src="../images/broadcasting_demo_video_1.mp4" type="video/mp4">
+            </video>
+
+            <p style="margin-top:20px;"><strong>3) Events such as strike outs, hits, and home runs</strong></p>
+            <video controls width="400" style="margin:4px;">
+                <source src="../images/broadcasting_demo_video_3.mp4" type="video/mp4">
+            </video>
+            <video controls width="400" style="margin:4px;">
+                <source src="../images/broadcasting_demo_video_4.mp4" type="video/mp4">
+            </video>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                &nbsp&nbsp&nbsp&nbsp Our TTS system can also control the intensity of the epxressivness depend on the situation. Please listen to the speech smaples below.
-                </p>
-            </div>
+
+        <p style="margin-top:24px;">
+            Lastly, we were also able to create a demo where emotions could be adjusted to provide biased broadcasting
+            for each team in the same situation. Through this, we present a baseball broadcast scenario tailored to
+            each individual's cheering team.
+        </p>
+
+        <div style="text-align:center; margin-top:16px;">
+            <p><strong>NC-side broadcasting (depressed)</strong></p>
+            <video controls width="400" style="margin:4px;">
+                <source src="../images/broadcasting_demo_video_5.mp4" type="video/mp4">
+            </video>
+            <p style="margin-top:12px;"><strong>LG-side broadcasting (excited)</strong></p>
+            <video controls width="400" style="margin:4px;">
+                <source src="../images/broadcasting_demo_video_6.mp4" type="video/mp4">
+            </video>
         </div>
-        <div class="row">
-            <!-- <div class="col-md-12 align-middle"> -->
-            <div class="center-block">
-                <table class="table-bordered">
-                    <tbody>
-                        <tr>
-                            <td><h4>Weak</h4></td>
-                            <td>
-                                <audio controls>
-                                    <source src="../audio/baseball_speech_2_weak.wav" type="audio/wav">
-                                    Audio not available.
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><h4>Strong</h4></td>
-                            <td>
-                                <audio controls>
-                                    <source src="../audio/baseball_speech_2_strong.wav" type="audio/wav">
-                                    Audio not available.
-                                </audio>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                &nbsp&nbsp&nbsp&nbsp Furthermore, various situations are bound to appear in baseball broadcasts. The following videos are samples with synthesized speech from our TTS system of four situations: 1) player introduction, 2) commentary on ball counts or pitches, and 3) events such as strike outs, hits, and home runs.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <!-- <div class="col-md-12 align-middle"> -->
-            <div class="center-block">
-                <table style="text-align: center;">
-                    <tbody>
-                        <tr>
-                            <td colspan="2"><p><strong>1) Player introduction</strong></p>
-                                <video controls width="400px">
-                                    <source src="../images/broadcasting_demo_video_2.mp4" type="video/mp4" />
-                                </video>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><p><strong>2) Commentary on ball counts or pitches</strong></p>
-                                <video controls width="400px">
-                                    <source src="../images/broadcasting_demo_video_1.mp4" type="video/mp4" />
-                                </video>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><p><strong>3) Events such as strike outs, hits, and home runs</strong></p>
-                                <video controls width="400px">
-                                    <source src="../images/broadcasting_demo_video_3.mp4" type="video/mp4" />
-                                </video>
-                                <video controls width="400px">
-                                    <source src="../images/broadcasting_demo_video_4.mp4" type="video/mp4" />
-                                </video>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p>
-                &nbsp&nbsp&nbsp&nbsp Lastly, we were also able to create a demo where emotions could be adjusted to provide biased broadcasting for each team in the same situation. Through this, we present a baseball broadcast scenario tailored to each individual's cheering team.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <!-- <div class="col-md-12 align-middle"> -->
-            <div class="center-block">
-                <table style="text-align: center;">
-                    <tbody>
-                        <tr>
-                            <td colspan="2"><p><strong>NC-side broadcasting (depressed)</strong></p>
-                                <video controls width="400px">
-                                    <source src="../images/broadcasting_demo_video_5.mp4" type="video/mp4" />
-                                </video>
-                            </td>
-                            <td colspan="2"><p><b>LG-side braodcasting (excited)</b></p>
-                                <video controls width="400px">
-                                    <source src="../images/broadcasting_demo_video_6.mp4" type="video/mp4" />
-                                </video>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <h6>Videos and speech samples are from following link: https://about.ncsoft.com/news/article/prosody-control-ai-20201210</h6>
-            </div>
-        </div>
-    </div><!-- /.container -->
-    </body>
+
+        <p style="margin-top:24px; font-size:13px; color:#aaa;">
+            Videos and speech samples are from: https://about.ncsoft.com/news/article/prosody-control-ai-20201210
+        </p>
+    </div>
+
+</body>
 </html>

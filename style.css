@@ -7,7 +7,7 @@ body {
 }
 
 p  { font-size: 17px; line-height: 1.8; }
-h2 { font-size: 26px !important; font-weight: 700; }
+h2 { font-size: 26px !important; font-weight: 600; color: #333; }
 h3 { font-size: 21px !important; }
 h4 { font-size: 18px !important; }
 h5 { font-size: 15px !important; }
@@ -15,8 +15,7 @@ h5 { font-size: 15px !important; }
 hr {
   margin: 6px 0 18px !important;
   border: none;
-  border-top: 2px solid #0066b2;
-  opacity: 0.35;
+  border-top: 1px solid #ddd;
 }
 
 a { color: #0066b2; }
@@ -184,12 +183,12 @@ ol li {
 
 ol li::before {
   content: '\25CF';
-  color: #0066b2;
+  color: #444;
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 13px;
-  line-height: 1.7;
+  font-size: 9px;
+  line-height: 2.2;
 }
 
 table { margin-bottom: 20px; }

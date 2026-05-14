@@ -101,6 +101,44 @@ a:hover { color: #004a8a; }
   padding: 36px 0 8px;
 }
 
+.news-list {
+  max-height: 172px;
+  overflow-y: scroll;
+  border: 1px solid #e1e7ef;
+  border-radius: 5px;
+  background: #fbfcfe;
+  padding-top: 10px;
+  padding-right: 12px;
+  padding-bottom: 2px;
+  scrollbar-gutter: stable;
+  scrollbar-color: #8aa8c8 #edf2f7;
+  scrollbar-width: thin;
+}
+
+.news-list:focus {
+  outline: 2px solid #9bb8d8;
+  outline-offset: 4px;
+}
+
+.news-list::-webkit-scrollbar {
+  width: 12px;
+}
+
+.news-list::-webkit-scrollbar-track {
+  background: #edf2f7;
+  border-radius: 8px;
+}
+
+.news-list::-webkit-scrollbar-thumb {
+  background: #8aa8c8;
+  border: 3px solid #edf2f7;
+  border-radius: 8px;
+}
+
+.news-list::-webkit-scrollbar-thumb:hover {
+  background: #6f92b8;
+}
+
 /* === PUBLICATIONS === */
 .pub-year {
   font-size: 14px;

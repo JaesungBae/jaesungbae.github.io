@@ -91,24 +91,33 @@
         <div class="container section-block" id="news">
             <h2>News</h2>
             <hr>
-            <ol>
+            <ol class="news-list" id="news-list" tabindex="0" data-visible-count="5">
+                <li>
+                    (May 2026) I was selected as a Gold Reviewer for ICML 2026, which included a complimentary
+                    registration offer.
+                </li>
                 <li>
                     (Mar 2026) I am participating as a volunteer and student organizer for <a
-                        href="https://nlp.cs.illinois.edu/msld.html">MSLD (Midwest Speech and Language Days) 2026</a> at
+                        href="https://nlp.cs.illinois.edu/msld.html">MSLD (Midwest Speech and Language Days)
+                        2026</a> at
                     UIUC.
                 </li>
                 <li>
                     (Dec 2025) I passed my PhD qualifying exam!
                 </li>
-                <li>(May 2025) I started working as a Research Scientist Intern at MSL (Meta Superintelligence Lab),
+                <li>(May 2025) I started working as a Research Scientist Intern at MSL (Meta
+                    Superintelligence Lab),
                     supervised by Yun Wang.</li>
-                <li>(Dec 2024) I am organizing the <i>"ICASSP 2025 Generative Data Augmentation Challenge:
+                <li>(Dec 2024) I am organizing the <i>"ICASSP 2025 Generative Data
+                        Augmentation Challenge:
                         Zero-Shot Speech Synthesis for Personalized Speech Enhancement."</i> Looking forward to
                     your participation! <a href="https://sites.google.com/view/genda2025/pse">[link]</a>
                 </li>
-                <li>(Aug 2024) Starting my PhD at the <i>University of Illinois Urbana-Champaign (UIUC).</i>
+                <li>(Aug 2024) Starting my PhD at the <i>University of Illinois
+                        Urbana-Champaign (UIUC).</i>
                 </li>
-                <li>(Dec 2023) Two papers have been accepted to <i>ICASSP 2024!</i> (one first author, one
+                <li>(Dec 2023) Two papers have been accepted to <i>ICASSP 2024!</i> (one
+                    first author, one
                     second author)</li>
             </ol>
         </div>
@@ -442,7 +451,7 @@
                     Speech Synthesis for Personalized Speech Enhancement <a
                         href="https://sites.google.com/view/genda2025/pse">[link]</a>
                 </li>
-                <li>Reviewer: AAAI, NeurIPS, ICASSP 2025, ICML 2026</li>
+                <li>Reviewer: AAAI, NeurIPS, ICASSP 2025, ICML (Gold Reviewer) 2026</li>
             </ol>
         </div>
 
@@ -456,6 +465,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+        const newsList = document.querySelector('.news-list');
+
+        if (newsList) {
+            const setNewsListHeight = () => {
+                const visibleCount = Number(newsList.dataset.visibleCount) || 5;
+                const visibleItems = Array.from(newsList.children).slice(0, visibleCount);
+                const height = visibleItems.reduce((total, item) => {
+                    const styles = window.getComputedStyle(item);
+                    return total + item.offsetHeight + parseFloat(styles.marginBottom);
+                }, 0);
+
+                newsList.style.maxHeight = `${height}px`;
+            };
+
+            setNewsListHeight();
+            window.addEventListener('resize', setNewsListHeight);
+        }
+    </script>
 </body>
 
 </html>

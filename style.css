@@ -101,6 +101,10 @@ a:hover { color: #004a8a; }
   padding: 36px 0 8px;
 }
 
+.section-block[id] {
+  scroll-margin-top: 70px;
+}
+
 .news-list {
   max-height: 172px;
   overflow-y: scroll;
@@ -137,6 +141,100 @@ a:hover { color: #004a8a; }
 
 .news-list::-webkit-scrollbar-thumb:hover {
   background: #6f92b8;
+}
+
+/* === EDUCATION & EXPERIENCE === */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px;
+}
+
+.experience-column h3 {
+  margin: 0 0 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+.experience-card {
+  display: flex;
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid #e7ebf0;
+}
+
+.experience-column .experience-card:first-of-type {
+  border-top: 3px solid #dce8f5;
+}
+
+.experience-logo {
+  flex: 0 0 58px;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  border: 1px solid #e1e7ef;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.experience-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.experience-logo--wide {
+  flex-basis: 78px;
+  width: 78px;
+}
+
+.experience-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.experience-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.experience-heading h4 {
+  margin: 0;
+  color: #222;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.experience-heading time {
+  flex: 0 0 auto;
+  color: #687483;
+  font-size: 13px;
+  line-height: 1.45;
+  text-align: right;
+}
+
+.experience-role,
+.experience-detail {
+  margin: 4px 0 0;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.experience-role {
+  color: #333;
+  font-weight: 600;
+}
+
+.experience-role span,
+.experience-detail {
+  color: #687483;
+  font-weight: 400;
 }
 
 /* === PUBLICATIONS === */
@@ -245,7 +343,26 @@ tr td { padding: 5px !important; }
     gap: 6px;
   }
 
+  .section-block[id] {
+    scroll-margin-top: 118px;
+  }
+
   .nav-links { gap: 2px 10px; }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .experience-heading {
+    display: block;
+  }
+
+  .experience-heading time {
+    display: block;
+    margin-top: 3px;
+    text-align: left;
+  }
 
   .project-row {
     flex-direction: column;
